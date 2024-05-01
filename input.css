@@ -6,7 +6,96 @@
 
 
 @layer components {
-    .heading{
-        @apply bg-purple-600
+    .mainContent{
+        @apply bg-customColor2
+    }
+
+   
+    .mainHeader{
+        @apply xl:flex lg:flex sm:flex justify-between items-center pt-7 pb-7  shadow-[0_3px_10px_rgb(0,0,0,0.6)] bg-customColor
+    }
+    .logo{
+        @apply ml-14 font-semibold text-4xl text-center
+    }
+    .navList{
+        @apply xl:flex lg:flex  font-medium xl:lg:md:mr-14 text-xl 
+    }
+    .navElem{
+        @apply ml-7 hover:scale-105 text-center
+    }
+
+
+    .aboutSection{
+        @apply xl:lg:md:flex xl:lg:md:justify-between  pt-20 
+    }
+    .aboutArticle{
+        @apply xl:lg:md:w-1/3 text-lg xl:lg:md:ml-40 px-5 xl:lg:md:px-0
+    }
+    .aboutTitle{
+        @apply text-3xl font-medium mb-5 text-customColor
+    }
+    .aboutImage{
+        @apply  mr-36 flex justify-center px-5
+    } 
+    .img{
+        @apply xl:lg:md:w-4/6 w-full
+    }
+
+
+
+    .projectsSection{
+        @apply  mt-20 xl:lg:md:ml-40  px-10 xl:lg:md:px-0
+    }
+    .projectsTitle{
+        @apply text-3xl font-medium mb-5 text-customColor
+    }
+    .projectsUl{
+        @apply text-xl list-disc 
+    }
+
+
+
+    .skillsSection{
+        @apply  mt-28 xl:lg:md:ml-40 px-10 xl:lg:md:px-0
+    }
+    .skillsTitle{
+        @apply text-3xl font-medium mb-8 text-customColor
+    }
+    .skillsIcons{
+        @apply text-5xl mr-64 xl:flex lg:flex md:flex justify-around  
+    }
+    .skillIcon{
+        @apply hover:scale-110 cursor-pointer 
+    }
+    .desc{
+        @apply mt-10  text-lg italic font-bold xl:lg:md:pr-96  px-5 xl:lg:md:px-0
+    }
+    
+
+
+    .contactSection{
+        @apply mt-28 xl:lg:md:ml-40 pb-20 px-10 xl:lg:md:px-0
+    }
+    .contactTitle{
+        @apply text-3xl font-medium mb-8 text-customColor
+    }
+    .contactInfo{
+        @apply text-xl italic mb-4
+    }
+    .contactIcons{
+        @apply text-3xl w-1/4 xl:lg:md:flex xl:lg:md:justify-around 
+    }
+    .email{
+        @apply cursor-pointer
+    }
+    .containerEmail{
+        @apply xl:lg:md:ml-48
+    }
+}
+
+
+@layer base{
+    html{
+        font-family:"Exo 2", sans-serif;
     }
 }

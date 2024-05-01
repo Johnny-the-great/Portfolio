@@ -6,8 +6,82 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./scripts.js" async></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>  
-    <h1 class="heading">Hello</h1>
+    <header class="mainHeader">
+
+        <a href="#"class="logo"><h1 >Evgenii Igoshin</h1></a>
+
+        
+        <nav >
+            
+            <ul class="navList">
+                <a href="#aboutID" class="navElem "><li>About me</li></a>
+                <a href="#projectsID" class="navElem "><li>Projects</li></a>
+                <a href="#skillsID" class="navElem "><li>Skills</li></a>
+                <a href="#contactID" class="navElem "><li>Contact</li></a>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="mainContent">
+        <section class="aboutSection" id="aboutID">
+            <article class="aboutArticle">
+                <h2 class="aboutTitle">About Me</h2>
+                <p>Hi! I'm Evgenii Igoshin and am an Front-End Developer form Barcelona.I speak english, spanish and russian.
+                    I'm currently looking for new and interesting projects.<br><br>I have a great desire to learn new web technologies 
+                    to improve my professional skills and gain experience.<br><br>
+                    In my free time I like to read about Web development and watch videos about programming.
+                </p>
+            </article>
+            <section class="aboutImage">
+                <img src="../images/my.jpg" alt="profile image" class="img" >
+            </section>
+        </section>
+
+        <section class="projectsSection" id="projectsID">
+            <article class="projectsArticle">
+                <h2 class="projectsTitle">Projects</h2>
+                <ul class="projectsUl">
+                    <a href="https://github.com/Johnny-the-great/To-Do-WebApp"><li>To-Do Web App</li></a>
+                    <a href=""><li>Weather Web App</li></a>
+                    <a href=""><li>Currency converter</li></a>
+                </ul>
+            </article>
+        </section>
+
+        <section class="skillsSection" id="skillsID">
+            <h2 class="skillsTitle">Skills</h2>
+            <section class="skillsIcons">
+                <i class="fa-brands fa-html5 skillIcon" id="htmlIcon"></i>
+                <i class="fa-brands fa-css3-alt skillIcon" id="cssIcon"></i>
+                <i class="fa-brands fa-js skillIcon" id="jsIcon"></i>
+                <i class="fa-brands fa-react skillIcon" id="reactIcon"></i>
+                <i class="fa-brands fa-git skillIcon" id="gitIcon"></i>
+                <i class="fa-brands fa-github skillIcon" id="githubIcon"></i>
+                <i class="fa-brands fa-chrome skillIcon" id="chromeIcon"></i>
+                <i class="fa-brands fa-npm skillIcon" id="npmIcon"></i>
+                <i class="fa-brands fa-vuejs skillIcon" id="vuejsIcon"></i>
+            </section>
+            <section id="description"></section>
+        </section>
+
+        <section class="contactSection" id="contactID">
+            <h2 class="contactTitle">Contact</h2>
+            <p class="contactInfo">Have an interesting project? I would love to hear about it!</p>
+            <section class="contactIcons">
+                <a href="https://www.linkedin.com/in/evgenii-igoshin-0813182bb/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Johnny-the-great"><i class="fa-brands fa-github"></i></a>
+                <i class="fa-solid fa-envelope email" id="email" title="johnshin378@gmail.com"></i>
+                
+            </section>
+            <article id="containerEmail" ></article>
+        </section>
+    </main>
 </body>
 </html>
